@@ -1,0 +1,617 @@
+/*----------------------- start landingPage -----------------------*/
+.landingPage {
+  height: 412px;
+  overflow: hidden;
+  position: relative;
+}
+.landingPage img {
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 51px;
+  font-variant: small-caps;
+  color: #000000;
+}
+/*----------------------- end  landingPage -----------------------*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/*----------------------- start  latestProducts -----------------------*/
+.latestProducts {
+  padding: 100px 5% 50px;
+  overflow: hidden;
+}
+.latestProducts .search .input {
+  position: relative;
+  position: relative;
+  margin-bottom: 30px;
+}
+.latestProducts .search .input::after {
+  content: "";
+  width: 0px;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  background: #ff6e5a;
+  transition: 0.5s;
+  position: absolute;
+}
+.latestProducts .search .input.active::after {
+  width: 100%;
+  left: 0;
+}
+.latestProducts .search .input input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+  outline: 0;
+}
+.latestProducts .search .input input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat";
+}
+.latestProducts .search .input i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  color: #ff6e5a;
+  transform: translateY(-50%);
+}
+.latestProducts .search form > div {
+  margin-bottom: 35px;
+}
+.latestProducts .search .price h4,
+.latestProducts .search .guest h4 {
+  margin-bottom: 0px;
+}
+
+.latestProducts .search .submitSearch button {
+  padding: 10px 25px;
+  width: 100%;
+  color: white;
+  background: #ff6e5a;
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat";
+  border-radius: 5px;
+}
+/* ///////////////////////// start input range ////////////////////////// */
+
+[slider] {
+  position: relative;
+  height: 3px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 25px 0 10px 0;
+}
+
+[slider] > div {
+  position: absolute;
+  left: 13px;
+  right: 15px;
+  height: 3px;
+}
+
+[slider] > div > [inverse-left] {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 0 7px;
+}
+
+[slider] > div > [inverse-right] {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 0 7px;
+}
+
+[slider] > div > [range] {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  border-radius: 14px;
+  background-color: #ff6e5a;
+}
+
+[slider] > div > [thumb] {
+  position: absolute;
+  top: -7px;
+  z-index: 2;
+  height: 15px;
+  width: 15px;
+  text-align: left;
+  margin-left: -11px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #ff6e5a;
+  border-radius: 50%;
+  outline: none;
+}
+
+[slider] > input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 3;
+  height: 3px;
+  top: -2px;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+div[slider] > input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+
+div[slider] > input[type="range"]:focus {
+  outline: none;
+}
+
+div[slider] > input[type="range"]::-ms-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+}
+
+div[slider] > input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+}
+
+div[slider] > input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+  -webkit-appearance: none;
+}
+
+div[slider] > input[type="range"]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type="range"]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type="range"]::-ms-tooltip {
+  display: none;
+}
+
+[slider] > div > [sign] {
+  opacity: 0;
+  position: absolute;
+  margin-left: -11px;
+  top: -39px;
+  z-index: 3;
+  background-color: #ff6e5a;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+[slider] > div > [sign]:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  border-radius: 16px;
+  top: 19px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top-width: 16px;
+  border-top-style: solid;
+  border-top-color: #ff6e5a;
+}
+
+[slider] > div > [sign] > span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+[slider]:hover > div > [sign] {
+  opacity: 1;
+}
+/* ///////////////////////// end input range ////////////////////////// */
+
+.latestProducts .search div h4 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #111111;
+}
+
+.latestProducts .search div.categories ul li a,
+.latestProducts .search div.categories ul li span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #555555;
+}
+.latestProducts .search div.categories ul li.active a {
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 170%;
+  color: #ff6e5a;
+}
+.latestProducts .search div.categories ul li span {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 15px;
+}
+.latestProducts .search div.reviewe ul li:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+.latestProducts .search div.reviewe h2 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ff6e5a;
+  margin-bottom: 40px;
+}
+.latestProducts .search div.reviewe ul li {
+  justify-content: start;
+}
+.latestProducts .search div.reviewe ul li img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.latestProducts .search div.reviewe ul li .name h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+}
+.latestProducts .search div.reviewe ul li .name span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #222222;
+}
+
+/* //////////////////////// start LATEST PRODUCTS ///////////////////////////*/
+.latestProducts .products {
+  overflow: hidden;
+  padding: 50px 0 0;
+}
+.latestProducts .head {
+  margin-bottom: 40px;
+}
+
+.latestProducts .head ul {
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.latestProducts .head ul li {
+  color: #555;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Montserrat";
+  padding: 5px 10px;
+}
+.latestProducts .head ul li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+.latestProducts .head ul li.active {
+  color: #ff6e5a;
+  font-weight: 500;
+}
+
+.latestProducts .products .head h2 {
+  font-size: 38px;
+  color: #111111;
+  font-family: "Sulphur Point";
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.latestProducts .products .head {
+  margin-bottom: 40px;
+}
+
+.latestProducts .products .head ul {
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.latestProducts .products .head ul li {
+  color: #555;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Montserrat";
+  padding: 5px 10px;
+}
+.latestProducts .products .head ul li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+.latestProducts .products .head ul li.active {
+  color: #ff6e5a;
+  font-weight: 500;
+}
+
+.latestProducts .products .product .image > ul {
+  position: absolute;
+  left: 34px;
+  top: 0;
+}
+.latestProducts .products .product .image > ul li {
+  font-size: 10px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  padding: 1px 15px;
+  border-radius: 4px;
+}
+
+.latestProducts .products .image > ul li:nth-of-type(1) {
+  background: #ec9dab;
+}
+.latestProducts .products .product .image > ul li:nth-of-type(2) {
+  background: #ff6e5a;
+}
+.latestProducts .products .product .image > ul li:nth-of-type(3) {
+  background: #acd4c3;
+}
+.latestProducts .products .product .image > ul li:not(:last-child) {
+  margin-bottom: 3px;
+}
+.latestProducts .products .product .image {
+  width: 100%;
+  position: relative;
+}
+.latestProducts .products .product .image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.latestProducts .products .product {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.latestProducts .products .product .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.latestProducts .products .product .details .description h4 {
+  font-family: "Montserrat";
+  color: #555;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 0;
+}
+.latestProducts .products .product .details .description .price span {
+  font-family: "Montserrat";
+}
+.latestProducts
+  .products
+  .product
+  .details
+  .description
+  .price
+  span:nth-child(1) {
+  color: #111;
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.latestProducts
+  .products
+  .product
+  .details
+  .description
+  .price
+  span:nth-child(2) {
+  color: #888888;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.latestProducts .products .product .favorit {
+  cursor: pointer;
+}
+.latestProducts .products .product .favorit i.active {
+  color: #ff6e5a;
+}
+/* .latestProducts .products a {
+  font-size: 12px;
+  color: #111;
+  font-family: "Montserrat";
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 7px 10px;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  display: inline-block;
+  margin: 10px auto;
+  text-transform: capitalize;
+} */
+.latestProducts .pagination {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.latestProducts .pagination ul {
+  justify-content: center;
+  width: 100%;
+}
+.latestProducts .pagination ul li {
+  margin: 0 20px;
+}
+.latestProducts .pagination ul li a {
+  color: #111111;
+  display: block;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #111111;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.latestProducts .pagination ul li i {
+  margin: 0 5px;
+}
+.latestProducts .pagination ul li:not(:nth-of-type(1), :last-of-type) a {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+}
+
+.latestProducts .pagination ul li:not(:nth-of-type(1), :last-of-type):hover a,
+.latestProducts .pagination ul li:not(:last-of-type).active a {
+  color: white !important;
+  background: #ff6e5a;
+}
+/*////////////////////////// start latestProducts media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+  .latestProducts .products .head .dropDown {
+    width: 50%;
+  }
+}
+
+@media (max-width: 995px) {
+  .latestProducts .products .head .dropDown {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .latestProducts .products .head .dropDown {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+}
+/*/ ///////////////////////// end  latestProducts media query ///////////////////////////// /*/
+
+/*----------------------- end  latestProducts -----------------------*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/

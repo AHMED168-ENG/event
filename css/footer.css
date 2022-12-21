@@ -1,0 +1,229 @@
+/* //////////////////////// start footer ///////////////////////////*/
+footer {
+  background: #f8f8fa;
+  padding: 50px 0 0;
+  overflow: hidden;
+}
+footer .row > div {
+  padding: 0 30px !important;
+}
+footer .logo {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+footer .logo::after {
+  content: "";
+  width: 100%;
+  height: 0.2px;
+  background: rgb(239 239 239);
+  top: 50%;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+footer .logo img {
+  z-index: 3;
+  position: relative;
+}
+footer .upFooter {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #eee;
+}
+footer .row .search h4,
+footer .row > div:nth-of-type(3),
+footer .row > div:nth-of-type(2) {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #111111;
+}
+footer .row .search p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: #555555;
+}
+footer .row .search .email {
+  width: 100%;
+  position: relative;
+}
+footer .row .search .email input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+  background: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+}
+footer .row .search .email span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  z-index: 1;
+  transition: 0.5s;
+  color: #888888;
+}
+footer .row .search .email span.active {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+footer .row .search .email i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  line-height: 170%;
+  z-index: 1;
+  font-size: 22px;
+  color: #555555;
+}
+footer .row > div:nth-of-type(2) {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #111111;
+}
+footer .row ul li:nth-child(1) {
+  font-weight: 500;
+}
+footer .row ul li:not(:last-of-type) {
+  font-weight: 400;
+}
+footer .row ul li {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+footer .downFooter {
+  padding: 20px 0 20px;
+}
+footer .downFooter .row {
+  align-items: center;
+}
+footer .row > div:nth-of-type(3) ul li a {
+  display: flex;
+  align-items: center;
+  color: #444444;
+}
+footer .row > div:nth-of-type(3) ul li a::before {
+  content: "-";
+  display: block;
+  margin-right: 10px;
+}
+
+.downFooter .row > div > a,
+.downFooter .row > div > span {
+  display: block;
+  font-size: 14px;
+  color: #888888;
+}
+.downFooter .row > div > span a {
+  font-size: 14px;
+  color: #888888;
+}
+.downFooter .row > div p {
+  margin: 0;
+}
+.downFooter .row > div a:nth-of-type(2) {
+  font-size: 13px;
+}
+.downFooter .row > div:nth-of-type(2) div {
+  text-align: right;
+  font-size: 14px;
+  color: #888888;
+}
+
+/*////////////////////////// start footer media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+  footer .row > div {
+    margin-bottom: 20px;
+  }
+  .downFooter .row > div:nth-of-type(2) div {
+    text-align: center;
+  }
+  footer .logo img {
+    width: 60px;
+  }
+}
+@media (max-width: 575px) {
+}
+/*////////////////////////// end footer media query ///////////////////////////// /*/
+/* //////////////////////// end footer ///////////////////////////*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/*////////////////////////// start home media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+  /* /////////////////////////// start event section /////////////////// */
+  .eventsCategories .head h2 {
+    font-size: 28px;
+  }
+
+  .eventsCategories .items .item .content h5 {
+    font-size: 17px;
+  }
+  /* /////////////////////////// end event section /////////////////// */
+}
+@media (max-width: 768px) {
+  footer .row > div {
+    padding: 0;
+  }
+  footer .upFooter {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 575px) {
+}
+/*////////////////////////// start home media query ///////////////////////////// /*/
+
+/*----------------------- end  resrponsive -----------------------*/

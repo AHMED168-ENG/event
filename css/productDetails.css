@@ -1,0 +1,857 @@
+/*----------------------- start landingPage -----------------------*/
+.landingPage {
+  height: 412px;
+  overflow: hidden;
+  position: relative;
+}
+.landingPage img {
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 51px;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+/*////////////////////////// start news media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+  .landingPage .over h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .landingPage .over h2 {
+    font-size: 25px;
+  }
+}
+/*/ ///////////////////////// end news media query ///////////////////////////// /*/
+/*----------------------- end  landingPage -----------------------*/
+/* 
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+*/
+/*----------------------- start  showDetails -----------------------*/
+.showDetails {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.showDetails .images ul li {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  /* border: 1px solid #ddd; */
+  cursor: pointer;
+}
+.showDetails .images ul li.active {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+.showDetails .images ul li img {
+  width: 100%;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+}
+.showDetails .showImage {
+  width: 100%;
+}
+.showDetails .showImage img {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  transition: 0.7s;
+  object-fit: cover;
+}
+.showDetails .showImage img.remove {
+  visibility: hidden;
+  opacity: 0;
+}
+.showDetails .details {
+  padding-left: 30px;
+}
+.showDetails .details .favorite {
+  text-align: right;
+  margin-bottom: 80px;
+}
+.showDetails .details .favorite i {
+  color: #e85744;
+  width: 33px;
+  height: 33px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.showDetails .details .favorite i:nth-of-type(2) {
+  background: #eee;
+}
+.showDetails .details h2 {
+  font-family: "Sulphur Point";
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #ff6e5a;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.showDetails .details .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.showDetails .details .price span {
+  font-family: "Montserrat";
+  font-weight: 550;
+  font-size: 22px;
+  color: #111111;
+}
+.showDetails .details .price > span:last-of-type {
+  font-size: 14px;
+  color: #888888;
+}
+.showDetails .details .rate i {
+  color: #ffc107;
+  font-size: 14px;
+}
+.showDetails .details .rate span {
+  color: #ff6e5a;
+  font-size: 12px;
+  font-weight: 500;
+}
+.showDetails .details P {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.showDetails .details .countControl {
+  height: 38px;
+  color: #ff6e5a;
+  display: flex;
+  margin-bottom: 20px;
+}
+.showDetails .details .countControl button {
+  outline: 0;
+  border: 0;
+  padding: 4px;
+  height: 100%;
+  padding: 0 15px;
+  color: #ff6e5a;
+  background: #f8f8fa;
+}
+.showDetails .details .countControl button i {
+  font-weight: 0;
+  font-size: 13px;
+}
+.showDetails .details .countControl input {
+  background: #f8f8fa;
+  width: 50px;
+  font-size: 13px;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  padding: 0;
+}
+.showDetails .details form > button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 170%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ff6e5a;
+  padding: 14px 40px;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+}
+/*////////////////////////// start news media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+  .showDetails .images ul li {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .showDetails .images ul li {
+    width: 24%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .showDetails .images ul {
+    justify-content: space-between;
+  }
+  .showDetails .details .favorite {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .showDetails .details h2 {
+    font-size: 29px;
+  }
+  .showDetails .details .price > span {
+    font-size: 16px;
+  }
+  .showDetails .details .rate i {
+    font-size: 10px;
+  }
+}
+/*/ ///////////////////////// end news media query ///////////////////////////// /*/
+/*----------------------- end  showDetails -----------------------*/
+/* 
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+*/
+/*----------------------- start  relatedProducts -----------------------*/
+.relatedProducts {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.relatedProducts header {
+  margin-bottom: 20px;
+}
+.relatedProducts header h2 {
+  font-family: "Sulphur Point";
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #111111;
+}
+.relatedProducts .products {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.relatedProducts .products > div.product {
+  width: 30%;
+  padding: 0 10px;
+  opacity: 0.2;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.relatedProducts .products div.product.active {
+  opacity: 1;
+}
+.relatedProducts .products > div .image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.relatedProducts .products > div .image img {
+  width: 100%;
+  aspect-ratio: 1/1.3;
+}
+.relatedProducts .products > div .details {
+  align-items: center;
+  justify-content: space-between;
+}
+.relatedProducts .products > div .details h4 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 5px;
+}
+.relatedProducts .products > div .details span.price {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff6e5a;
+}
+.relatedProducts .products > div .details span.oldPrice {
+  font-size: 14px;
+  color: #888888;
+  margin: 0 10px;
+  text-decoration: line-through;
+}
+.relatedProducts .products > div .details i {
+  cursor: pointer;
+  color: #ff6e5a;
+}
+.relatedProducts .pagination {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.relatedProducts .pagination ul {
+  justify-content: center;
+  width: 100%;
+}
+.relatedProducts .pagination ul li {
+  margin: 0 20px;
+}
+.relatedProducts .pagination ul li a {
+  color: #111111;
+  display: block;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #111111;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.relatedProducts .pagination ul li i {
+  margin: 0 5px;
+}
+.relatedProducts .pagination ul li:not(:nth-of-type(1), :last-of-type) a {
+  width: 20px;
+  height: 20px;
+}
+
+.relatedProducts .pagination ul li:not(:nth-of-type(1), :last-of-type):hover a,
+.relatedProducts .pagination ul li:not(:last-of-type).active a {
+  color: #ff6e5a;
+}
+/*////////////////////////// start relatedProducts media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+  .relatedProducts header h2 {
+    font-size: 25px;
+  }
+  .relatedProducts .products {
+    justify-content: center;
+  }
+  .relatedProducts .products i.fa-plus {
+    padding: 10px 0;
+  }
+  .relatedProducts .products > div {
+    width: 100%;
+  }
+  .relatedProducts .products > div .image img {
+    aspect-ratio: 1/1;
+  }
+}
+@media (max-width: 575px) {
+  .relatedProducts header h2 {
+    font-size: 21px;
+  }
+}
+/*/ ///////////////////////// end relatedProducts media query ///////////////////////////// /*/
+/*----------------------- end  relatedProducts -----------------------*/
+/* 
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+*/
+/*----------------------- start  description -----------------------*/
+.description {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.description .text h4 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.description .text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+}
+.description .details {
+  padding: 40px 0 0 50px;
+}
+.description .details ul li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  display: flex;
+}
+.description .details ul li span:nth-of-type(1) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111111;
+  text-align: right;
+  width: 35%;
+  padding-right: 10px;
+}
+.description .details ul li span:nth-of-type(2) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  width: 65%;
+}
+/*////////////////////////// start description media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+  .description {
+    padding: 0 0 20px;
+  }
+  .description .details {
+    padding: 0;
+  }
+  .description .details ul li span:nth-of-type(1) {
+    text-align: left;
+  }
+}
+@media (max-width: 575px) {
+}
+/*/ ///////////////////////// end description media query ///////////////////////////// /*/
+/*----------------------- end  description -----------------------*/
+/* 
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+*/
+/*----------------------- start  interaction -----------------------*/
+.interaction {
+  padding: 30px 0;
+  overflow: hidden;
+}
+.interaction .row .allReview .review {
+  border-bottom: 1px solid #ddd;
+}
+.interaction .row .allReview .review:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.interaction .row .allReview .review .reviewHead {
+  align-items: center;
+}
+.interaction .row .allReview .review .reviewHead .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.interaction .row .allReview .review .reviewHead .image img {
+  width: 100%;
+  height: 100%;
+}
+.interaction .row .allReview .review .reviewHead h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  color: #111111;
+  margin: 0;
+}
+.interaction .row .allReview .review .reviewHead .date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #888888;
+}
+.interaction .row .allReview .review .reviewHead .separet {
+  margin: 0 10px;
+  color: #888888;
+}
+.interaction .row .allReview .review .reviewHead .rate i {
+  font-size: 10px;
+  color: #dadae0;
+}
+.interaction .row .allReview .review .reviewHead .rate i.active {
+  color: #ffc107;
+}
+
+.interaction .row .allReview .review .reviewBody p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 170%;
+  color: #555555;
+  padding: 20px 0;
+  margin: 0;
+}
+.interaction .row .addReview {
+  padding: 30px 0 0 40px;
+}
+.interaction .row .addReview .notification {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  transition: 0.5s;
+  font-family: "Sulphur Point";
+  text-transform: capitalize;
+}
+.interaction .row .addReview .notification.active {
+  max-height: 100px;
+  overflow: visible;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.interaction .row .addReview h2 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 110%;
+  text-transform: capitalize;
+  color: #111111;
+}
+.interaction .row .addReview p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.interaction .row .addReview .rate {
+  margin-bottom: 10px;
+}
+.interaction .row .addReview .rate i {
+  color: #dadae0;
+  cursor: pointer;
+}
+.interaction .row .addReview .rate i.active {
+  color: #ffc107;
+}
+.interaction .row .addReview .inputs {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.interaction .row .addReview .inputs > div {
+  width: 45%;
+}
+.interaction .row .addReview .inputs input,
+.interaction .row .addReview .reviewData textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  font-size: 18px;
+  outline: none;
+}
+.interaction .row .addReview .inputs input::-webkit-input-placeholder,
+.interaction .row .addReview .reviewData textarea::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888888;
+}
+.interaction .row .addReview .reviewData textarea {
+  height: 120px;
+  resize: vertical;
+}
+.interaction .row .addReview button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ff4e6c;
+  padding: 12px 30px;
+  border: 0;
+  border-top: 2px solid #ff4e6c;
+  border-bottom: 2px solid #ff4e6c;
+  outline: none;
+  background: none;
+  margin-top: 20px;
+}
+/*////////////////////////// start description media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 575px) {
+  .interaction .row .allReview .review .reviewHead {
+    flex-wrap: wrap;
+  }
+  .interaction .row .allReview .review .reviewHead .rate {
+    width: 100%;
+    text-align: center;
+  }
+  .interaction .row .allReview .review .reviewHead h4 {
+    font-size: 14px;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .interaction .row .allReview .review .reviewHead .date {
+    font-size: 10px;
+  }
+  .interaction .row .allReview .review .reviewHead .rate i {
+    font-size: 8px;
+  }
+  .interaction .row .allReview .review .reviewHead .separet {
+    display: none;
+  }
+  .interaction .row .addReview {
+    padding: 0;
+  }
+  .interaction .row .addReview h2 {
+    font-size: 24px;
+  }
+}
+/*/ ///////////////////////// end description media query ///////////////////////////// /*/
+/*----------------------- end  interaction -----------------------*/
+/* 
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+*/
+/*----------------------- start  similarProduct -----------------------*/
+.similarProduct {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.similarProduct header button {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.similarProduct header h2 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #111111;
+  margin: 15px 0px 0;
+}
+.similarProduct .product > a {
+  display: block;
+  width: 100%;
+}
+.similarProduct .product > a img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.similarProduct .product > .details {
+  padding-top: 10px;
+}
+.similarProduct .product > .details h4 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #ff6e5a;
+  margin: 0;
+}
+.similarProduct .product > .details p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+  color: #555555;
+}
+.similarProduct .product > .details span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 17px;
+  color: #111111;
+}
+/*////////////////////////// start description media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+  .similarProduct header button {
+    font-size: 12px;
+  }
+  .similarProduct header h2 {
+    font-size: 26px;
+    margin-top: 6px;
+  }
+  .similarProduct .product > .details h4 {
+    font-size: 26px;
+  }
+  .similarProduct .product > .details span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+}
+/*/ ///////////////////////// end description media query ///////////////////////////// /*/
+/*----------------------- end  similarProduct -----------------------*/
+/* 
+- 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+*/

@@ -1,0 +1,619 @@
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f3a095;
+}
+
+title {
+  text-transform: capitalize;
+}
+
+.row > div {
+  padding: 5px !important;
+}
+
+/*----------------------- start reset element -----------------------*/
+* ul {
+  padding: 0;
+  margin: 0;
+}
+a:hover,
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+/*----------------------- end reset element -----------------------*/
+/*----------------------- start upperNav -----------------------*/
+.allNavs.active {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.12);
+}
+.allNavs.removeUpper .upperNav {
+  display: none;
+}
+.allNavs {
+  background: #fff;
+}
+.upperNav {
+  background: #fff;
+  padding: 15px 0 0;
+  border-bottom: 1px solid #eee;
+}
+.upperNav .row > div .discount p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #ff6e5a;
+  color: white;
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 0;
+}
+
+.upperNav .row > div .callUs {
+  text-align: right;
+}
+.upperNav .row > div .callUs span:nth-child(1) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  text-transform: capitalize;
+}
+.upperNav .row > div .callUs span:nth-child(2) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+/*----------------------- end  upperNav -----------------------*/
+
+/*----------------------- start  navbar -----------------------*/
+.navbar {
+  position: relative;
+  padding: 26px 0 15px;
+}
+.navbar .row {
+  align-items: center;
+}
+/*------------ list_link ------------------*/
+.navbar .row > div .list_link li.active a,
+.navbar .row > div .list_link li.active,
+.navbar .row > div .list_link li:hover > a {
+  color: #f3a095 !important;
+  transition: 0.4s;
+}
+.navbar .row > div .list_link li {
+  margin-right: 20px;
+  position: relative;
+  /* padding-top: 15px; */
+}
+.navbar .row > div .list_link li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 200px;
+  padding-top: 15px;
+}
+.navbar .row > div .list_link li > ul {
+  perspective: 700px;
+  display: none;
+}
+.navbar .row > div .list_link li > ul li {
+  padding: 5px 10px;
+  background: #eee;
+  color: #444;
+  text-transform: capitalize;
+  border: 1px solid #ddd;
+  transform: translateZ(0);
+  opacity: 0;
+}
+.navbar .row > div .list_link > ul li:hover ul li:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.navbar .row > div .list_link > ul li:hover ul li:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.navbar .row > div .list_link > ul li:hover ul li:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.navbar .row > div .list_link > ul li:hover ul li:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+.navbar .row > div .list_link > ul li:hover ul li:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+.navbar .row > div .list_link > ul li:hover ul li:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+.navbar .row > div .list_link > ul li:hover > ul li {
+  animation: nestedMenue 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.navbar .row > div .list_link > ul li:hover > ul {
+  display: block;
+}
+@keyframes nestedMenue {
+  0% {
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateZ(110px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.navbar .row > div .list_link a,
+.navbar .row > div .list_link li {
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.navbar .row > div .list_link li i {
+  font-size: 12px;
+}
+.navbar .row > div .list_link a,
+.navbar .row > div .list_link li {
+  color: #555555;
+}
+.navbar .row > div .list_link li:nth-child(1) i {
+  margin-right: 5px;
+}
+.navbar .row > div .list_link li:not(:nth-child(1)) i {
+  margin-left: 7pxpx;
+  font-size: 10px;
+}
+/*------------ list_link ------------------*/
+
+/*------------ logo ------------------*/
+.navbar .row > div .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.navbar .row > div .logo img {
+  width: 76px;
+}
+/*------------ logo ------------------*/
+
+/*------------ favorit ------------------*/
+
+.navbar .row div div.favorit ul {
+  justify-content: end;
+}
+.navbar .row div div.favorit > ul > li:not(:last-child) {
+  margin-right: 25px;
+}
+.navbar .row div div.favorit {
+  position: relative;
+}
+
+.navbar .row div div.favorit .shoppingCurt {
+  position: absolute;
+  top: calc(100% + 30px);
+  right: 0;
+  width: 150%;
+  background: white;
+  box-shadow: 10px 10px px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.navbar .row div div.favorit .shoppingCurt.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar .row div div.favorit .shoppingCurt::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 0%;
+  transform: translateY(-100%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+.navbar .row div div.favorit .shoppingCurt h2 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #ff6e5a;
+  margin-bottom: 30px;
+}
+.navbar .row div div.favorit .shoppingCurt ul {
+  margin-bottom: 20px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.navbar .row div div.favorit .shoppingCurt ul li:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li:not(:last-of-type)::after {
+  content: "";
+  width: calc(100% - 40px);
+  height: 1px;
+  background: #ff6e5a;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar .row div div.favorit .shoppingCurt ul li .details {
+  align-items: flex-end;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .details .image {
+  width: 60px;
+  margin-right: 5px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .details .image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .details .data h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+  margin: 0;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .details .data span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111111;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .countControlle {
+  background: #f8f8fa;
+  height: 40px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .countControlle button {
+  border: 0;
+  outline: none;
+  background: none;
+  width: 35px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .countControlle button i {
+  color: #ff6e5a;
+  font-size: 12px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .countControlle input {
+  width: 35px;
+  color: #ff6e5a;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .controlle i {
+  text-align: right;
+  display: block;
+  color: #ff6e5a;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.navbar .row div div.favorit .shoppingCurt ul li .controlle span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: right;
+  color: #111111;
+}
+.navbar .row div div.favorit .shoppingCurt .totalPrice {
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+.navbar .row div div.favorit .shoppingCurt .totalPrice span:nth-of-type(1) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #111111;
+  text-transform: capitalize;
+}
+.navbar .row div div.favorit .shoppingCurt .totalPrice span:last-of-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: #ff6e5a;
+}
+.navbar .row div div.favorit .shoppingCurt form > button {
+  width: 100%;
+  height: 50px;
+  background: #ff6e5a;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.navbar .row div div.favorit ul li input {
+  color: #555555;
+  font-size: 14px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  text-align: center;
+}
+
+.navbar .row div div.favorit ul li > span,
+.navbar .row div div.favorit ul li a > span {
+  background: #f3a095;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.navbar .row div div.favorit .user {
+  position: relative;
+}
+.navbar .row div div.favorit .user > i {
+  cursor: pointer;
+}
+.navbar .row div div.favorit ul li i {
+  color: #555555;
+  font-size: 14px;
+  cursor: pointer;
+}
+.navbar .row div div.favorit .user div.userProfile.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar .row div div.favorit .user .userProfile {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: -40px;
+  padding-top: 30px;
+  visibility: hidden;
+  transition: 0.6s;
+  opacity: 0;
+}
+.navbar .row div div.favorit .user .userProfile ul {
+  background: #eee;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 200px;
+  padding: 5px;
+}
+.navbar .row div div.favorit .user > .userProfile ul::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 35px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #eee;
+}
+.navbar .row div div.favorit .user .userProfile ul li a {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  font-family: "Montserrat";
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+  color: #222;
+  transition: 0.5s;
+}
+.navbar .row div div.favorit .user .userProfile ul li a:hover {
+  padding-left: 10px;
+}
+/*------------ favorit ------------------*/
+
+/*------------ smNav ------------------*/
+.row > div:last-of-type {
+  position: inherit;
+}
+.smNav .icon {
+  text-align: right;
+  font-size: 22px;
+  color: #555;
+  cursor: pointer;
+}
+.smNav .icon i {
+  transform: rotate(90deg);
+  font-size: 25px;
+}
+
+/* ////////////////////// start media query /////////////////////////*/
+@media (max-width: 1200px) {
+  /* ////////////// links ///////////////*/
+  .navbar .row > div .list_link li {
+    margin-right: 10px;
+  }
+  .navbar .row > div .list_link a {
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 992px) {
+  /* ////////////// upper nav div ///////////////*/
+  .upperNav {
+    padding: 20px 0 0;
+  }
+  .upperNav .row > div .discount p {
+    font-size: 12px;
+  }
+  /* ////////////// navbar ///////////////*/
+  .navbar {
+    position: relative;
+    padding: 3px 0;
+  }
+  /* ////////////// logo div ///////////////*/
+  .navbar .row > div .logo {
+    transform: none;
+    position: static;
+    text-align: center;
+  }
+  .navbar .row > div .logo img {
+    width: 40px;
+  }
+  /* ////////////// start nav list ///////////////*/
+  .navbar .pagesLink {
+    position: absolute !important;
+    top: calc(100% + 10px);
+    z-index: 20;
+    background: white;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 0 !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.12);
+  }
+  .navbar .pagesLink.active {
+    max-height: 600px;
+  }
+  .navbar .pagesLink .list_link ul {
+    display: block !important;
+    padding: 15px;
+  }
+
+  .navbar .pagesLink .list_link ul li,
+  .navbar .pagesLink .list_link ul li a {
+    display: block;
+    font-size: 18px;
+  }
+
+  .navbar .pagesLink .list_link > ul > li {
+    background: #eee;
+    padding: 5px;
+  }
+  .navbar .pagesLink .list_link > ul > li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  .navbar .pagesLink .list_link ul li ul {
+    position: inherit;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .navbar .pagesLink .list_link ul li:hover ul {
+    max-height: 300px;
+    padding: 5px;
+  }
+  .navbar .pagesLink .list_link ul li ul li:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+  .navbar .pagesLink .list_link ul li ul li {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+    border: 0;
+    width: 100%;
+    background: #ddd;
+  }
+}
+@media (max-width: 768px) {
+  /* ////////////// upper nav div ///////////////*/
+  .upperNav .row > div div {
+    text-align: center !important;
+  }
+  .upperNav .row > div .discount p {
+    margin-bottom: 10px;
+  }
+
+  /* ////////////// favorit div ///////////////*/
+  .navbar .row div div.favorit ul {
+    justify-content: center;
+  }
+  .navbar .container {
+    max-width: 100%;
+  }
+
+  /*------------ smNav ------------------*/
+  .smNav .icon {
+    text-align: right;
+  }
+}
+@media (max-width: 575px) {
+  /* ////////////// upper nav div ///////////////*/
+  .upperNav .row > div .discount p {
+    font-size: 12px;
+  }
+
+  .upperNav .row > div .callUs span {
+    font-size: 12px !important;
+  }
+  .navbar .row > div .logo img {
+    width: 40px;
+  }
+  /*------------ smNav ------------------*/
+  .smNav .icon {
+    text-align: center;
+  }
+  .navbar .row > div .logo {
+    padding: 5px 0;
+  }
+  .navbar .row > div:nth-of-type(4) {
+    order: 2;
+  }
+  .navbar .row > div:nth-of-type(3) {
+    order: 3;
+  }
+  .upperNav {
+    padding: 0;
+  }
+}
+/* ////////////////////// start media query /////////////////////////*/
+
+/*----------------------- end  navbar -----------------------*/

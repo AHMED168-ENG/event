@@ -1,0 +1,983 @@
+/* //////////////////////// start landing page ///////////////////////////*/
+.carosal {
+  height: 100vh;
+}
+.carosal > div {
+  height: 100%;
+  position: relative;
+}
+.carosal > div.pairant > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 2s;
+}
+/* .carosal div div {
+  height: 100%;
+  position: relative;
+  padding: 0 !important;
+  border-radius: none;
+} */
+.carosal > div.pairant > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carosal > div.pairant > div .over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+.carosal > div.pairant > div .over h2 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  text-transform: capitalize;
+  color: #ffffff;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.carosal > div.pairant > div .over p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #dcdcdc;
+  width: 50%;
+  /* margin: auto; */
+  transform: translateY(50px);
+  opacity: 0;
+}
+.carosal > div.pairant > div.active .over h2 {
+  animation: headerParagraph 1s ease-in-out 1 forwards;
+}
+.carosal > div.pairant > div.active .over p {
+  animation: animParagraph 1s ease-in-out 1 forwards;
+}
+.carosal > div.pairant > div.active .down {
+  animation: animDown 1s ease-in-out 1 forwards;
+  animation-delay: 0.5s;
+}
+.carosal > div.pairant > div .down {
+  background: rgb(238, 238, 238, 0.4);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+}
+.carosal > div.pairant > div .down i {
+  background: rgb(255, 110, 90, 0.7);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.carosal > div.pairant > div .down::after {
+  content: "";
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+  border: 2px solid #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: animIcon 1s ease-in-out infinite forwards;
+}
+
+.carosal > div.pairant > div.active {
+  opacity: 1;
+  visibility: visible;
+}
+.carosal > div.pairant > ul {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-between;
+  margin: 20px;
+}
+.carosal > div.pairant > ul li {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #dcdcdc;
+  cursor: pointer;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.carosal > div.pairant > ul li i {
+  margin: 0 4px;
+}
+@keyframes animParagraph {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animDown {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animIcon {
+  0% {
+    top: 12.5px;
+    left: 12.5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  100% {
+    top: -2.5px;
+    left: -2.5px;
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+}
+
+@keyframes headerParagraph {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* //////////////////////// end landing page ///////////////////////////*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/* //////////////////////// start Events Categories ///////////////////////////*/
+.eventsCategories {
+  padding: 70px 0;
+  overflow: hidden;
+}
+.eventsCategories .head {
+  margin-bottom: 50px;
+}
+.eventsCategories .head h2 {
+  color: #1e2022;
+  font-size: 38px;
+  font-family: "Sulphur Point";
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.eventsCategories .items .item {
+  text-align: center;
+}
+.eventsCategories .items .item .image {
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.eventsCategories .items .item .image img {
+  width: 100%;
+  height: 100%;
+}
+.eventsCategories .items .item .content h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #111;
+}
+
+/* /////////////////////////////////// start owl carosal /////////////////////////////////*/
+.eventsCategories .owl-carousel .owl-nav {
+  display: block;
+}
+.eventsCategories .owl-carousel .owl-nav button.owl-next,
+.eventsCategories .owl-carousel .owl-nav button.owl-prev {
+  font-size: 80px;
+  top: 0;
+  position: absolute;
+  border: 0 !important;
+  background: none !important;
+  outline: none;
+  color: #555 !important;
+}
+.eventsCategories .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+  transform: translate(50px, -50%);
+}
+.eventsCategories .owl-carousel .owl-nav button.owl-prev {
+  transform: translate(-50px, -50%);
+  left: 0;
+}
+/* /////////////////////////////////// start owl carosal /////////////////////////////////*/
+
+/* //////////////////////// end Events Categories ///////////////////////////*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+
+/* //////////////////////// start WeddingsHalls ///////////////////////////*/
+.WeddingsHalls {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.WeddingsHalls .head {
+  margin-bottom: 40px;
+}
+.WeddingsHalls .head span {
+  color: #ff6e5a;
+  font-family: Montserrat;
+}
+.WeddingsHalls .head h2 {
+  color: #111111;
+  font-family: "Sulphur Point";
+  font-size: 38px;
+  font-weight: 500;
+}
+.WeddingsHalls .head p {
+  color: #ff6e5a;
+  font-family: Montserrat;
+  max-width: 511px;
+  margin: auto;
+}
+.WeddingsHalls .items .item {
+  background: #f4f4f7;
+}
+.WeddingsHalls .items .item:hover {
+  opacity: #f8f8fa;
+}
+.WeddingsHalls .items .item .image {
+  width: 100%;
+  height: 338px;
+}
+.WeddingsHalls .items .item .image img {
+  width: 100%;
+  height: 100%;
+}
+.WeddingsHalls .items .item .details {
+  padding: 20px;
+}
+.WeddingsHalls .items .item .details h4 {
+  font-family: "Sulphur Point";
+  font-size: 23px;
+  text-transform: capitalize;
+  color: #1e2022;
+}
+.WeddingsHalls .items .item .details i.fas {
+  color: #ff6e5a;
+}
+.WeddingsHalls .items .item .details .rait {
+  margin-bottom: 10px;
+}
+.WeddingsHalls .items .item .details a {
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.WeddingsHalls .items .item .details a span {
+  color: #ff6e5a;
+  font-family: Sulphur Point;
+  font-size: 14px;
+}
+.WeddingsHalls .items .item .details a:hover i {
+  animation: showDetailsIcon 1.2s linear infinite;
+}
+
+/* /////////////////////////////////// start owl carosal /////////////////////////////////*/
+.WeddingsHalls .owl-carousel .owl-nav {
+  display: block;
+}
+
+.WeddingsHalls .owl-carousel .owl-nav button.owl-next,
+.WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+  font-size: 80px;
+  top: -30%;
+  position: absolute;
+  border: 0 !important;
+  background: none !important;
+  outline: none;
+  color: #555 !important;
+}
+.WeddingsHalls .owl-carousel .owl-nav button.owl-next {
+  right: 70px;
+}
+.WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+  left: 70px;
+}
+.WeddingsHalls .owl-carousel .owl-nav button.owl-next,
+.WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+  display: flex;
+  align-items: center;
+}
+.WeddingsHalls .owl-carousel .owl-nav button.owl-next span,
+.WeddingsHalls .owl-carousel .owl-nav button.owl-prev span {
+  color: #555;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 10px;
+}
+/* /////////////////////////////////// start WeddingsHalls media query /////////////////////////////////*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+  .WeddingsHalls .head h2 {
+    font-size: 28px;
+  }
+  .WeddingsHalls .head p {
+    font-size: 15px;
+  }
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-next,
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+    top: -25%;
+  }
+}
+@media (max-width: 768px) {
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-next,
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+    top: -35%;
+  }
+}
+@media (max-width: 575px) {
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-next,
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+    top: -40%;
+  }
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-next {
+    right: 0px;
+  }
+  .WeddingsHalls .owl-carousel .owl-nav button.owl-prev {
+    left: 0px;
+  }
+  .WeddingsHalls .head h2 {
+    font-size: 20px;
+  }
+}
+
+/* /////////////////////////////////// start WeddingsHalls media query /////////////////////////////////*/
+
+/* /////////////////////////////////// start owl carosal /////////////////////////////////*/
+
+@keyframes showDetailsIcon {
+  0% {
+    transform: translate(50%);
+  }
+  50% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(50%);
+  }
+}
+
+/* //////////////////////// end WeddingsHalls ///////////////////////////*/
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/* //////////////////////// start LATEST PRODUCTS ///////////////////////////*/
+.latestProducts {
+  overflow: hidden;
+  padding: 50px 0;
+}
+.latestProducts .head h2 {
+  font-size: 38px;
+  color: #111111;
+  font-family: "Sulphur Point";
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.latestProducts .head {
+  margin-bottom: 40px;
+}
+
+.latestProducts .head ul {
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.latestProducts .head ul li {
+  color: #555;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Montserrat";
+  padding: 5px 10px;
+}
+.latestProducts .head ul li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+.latestProducts .head ul li.active {
+  color: #ff6e5a;
+  font-weight: 500;
+}
+
+.latestProducts .product .image > ul {
+  position: absolute;
+  left: 34px;
+  top: 0;
+}
+.latestProducts .product .image > ul li {
+  font-size: 10px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+  padding: 1px 15px;
+  border-radius: 4px;
+}
+
+.latestProducts .image > ul li:nth-of-type(1) {
+  background: #ec9dab;
+}
+.latestProducts .product .image > ul li:nth-of-type(2) {
+  background: #ff6e5a;
+}
+.latestProducts .product .image > ul li:nth-of-type(3) {
+  background: #acd4c3;
+}
+.latestProducts .product .image > ul li:not(:last-child) {
+  margin-bottom: 3px;
+}
+.latestProducts .product .image {
+  width: 100%;
+  position: relative;
+}
+.latestProducts .product .image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.latestProducts .product {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.latestProducts .product .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.latestProducts .product .details .description h4 {
+  font-family: "Montserrat";
+  color: #555;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 0;
+}
+.latestProducts .product .details .description .price span {
+  font-family: "Montserrat";
+}
+.latestProducts .product .details .description .price span:nth-child(1) {
+  color: #111;
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.latestProducts .product .details .description .price span:nth-child(2) {
+  color: #888888;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.latestProducts .product .favorit {
+  cursor: pointer;
+}
+
+.latestProducts .product .favorit i.active {
+  color: #ff6e5a;
+}
+.latestProducts .showAll > a {
+  font-size: 12px;
+  color: #111;
+  font-family: "Montserrat";
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 7px 10px;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  display: inline-block;
+  margin: 10px auto;
+  text-transform: capitalize;
+}
+
+/*////////////////////////// start latestProducts media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+  .latestProducts .head .dropDown {
+    width: 50%;
+  }
+}
+
+@media (max-width: 995px) {
+  .latestProducts .head .dropDown {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .latestProducts .head .dropDown {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+}
+/*/ ///////////////////////// end  latestProducts media query ///////////////////////////// /*/
+/* //////////////////////// end LATEST PRODUCTS ///////////////////////////*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+
+/* //////////////////////// start titleHere ///////////////////////////*/
+.titleHere {
+  overflow: hidden;
+}
+.titleHere .content {
+  padding: 50px 0 !important;
+  background: #f8f8fa;
+}
+.titleHere .head h2 {
+  font-family: "Sulphur Point";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.titleHere .description span {
+  font-family: "Montserrat";
+  color: #ff6e5a;
+  font-size: 14px;
+}
+.titleHere .description h2 {
+  font-family: "Sulphur Point";
+  font-size: 38px;
+  width: 70%;
+  color: #111;
+}
+.titleHere .description p {
+  color: #555555;
+  width: 70%;
+  font-family: "Sulphur Point";
+}
+.titleHere .showAll a {
+  font-size: 12px;
+  color: #111;
+  font-family: "Montserrat";
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 7px 10px;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  display: inline-block;
+  margin: 10px auto;
+  text-transform: capitalize;
+}
+.titleHere .video {
+  width: 100%;
+  position: relative;
+  perspective: 700px;
+  cursor: pointer;
+}
+.titleHere .video video {
+  width: 100%;
+}
+.titleHere .video .over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.titleHere .video.start .over {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.titleHere .video .over i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+/*////////////////////////// start titleHere media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+}
+@media (max-width: 768px) {
+  .titleHere .row > div:nth-of-type(1) {
+    order: 2;
+  }
+  .titleHere .row > div:nth-of-type(2) {
+    order: 1;
+  }
+}
+@media (max-width: 575px) {
+  .titleHere .description h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+/*////////////////////////// start titleHere media query ///////////////////////////// /*/
+/* //////////////////////// end titleHere ///////////////////////////*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/* //////////////////////// start showOption ///////////////////////////*/
+
+.showOptions {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.showOptions .option .icons {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.showOptions .option .icons img:nth-of-type(1) {
+  margin-right: 20px;
+}
+.showOptions .option .icons img:nth-of-type(2) {
+  width: 40px;
+  aspect-ratio: 1/0.5;
+}
+.showOptions .option h2 {
+  color: #ff6e5a;
+  font-family: "Sulphur Point";
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.showOptions .option p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #555555;
+}
+/*////////////////////////// start showOption media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+  .showOptions .option {
+    margin-bottom: 25px;
+  }
+  .showOptions .option .icons {
+    margin-bottom: 10px;
+  }
+  .showOptions .option .icons img:nth-of-type(1) {
+    aspect-ratio: 1/1;
+  }
+  .showOptions .option .icons img:nth-of-type(2) {
+    width: 30px;
+  }
+  .showOptions .option p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .showOptions .option .icons img:nth-of-type(1) {
+    aspect-ratio: auto;
+  }
+}
+@media (max-width: 575px) {
+}
+/*////////////////////////// end showOption media query ///////////////////////////// /*/
+
+/* //////////////////////// end showOption ///////////////////////////*/
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+
+/* //////////////////////// start news section ///////////////////////////*/
+.news {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.news header {
+  margin-bottom: 40px;
+}
+.news header h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  text-transform: capitalize;
+  color: #111111;
+}
+.news .row > div .report .details .up {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.news .row > div .report .image img {
+  aspect-ratio: 1/0.8;
+  width: 100%;
+}
+.news .row > div .report .details .up .name h5 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #111111;
+}
+
+.news .row > div .report .details .up .name h5::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #888888;
+  display: block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.news .row > div .report .details .up .name span:nth-of-type(1) {
+  width: 23px;
+  text-align: center;
+  color: #888888;
+}
+.news .row > div .report .details .up .name span:nth-of-type(2) {
+  color: #777;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+}
+.news .row > div .report .details .up i {
+  color: #888888;
+}
+.news .row > div .report .details .down p {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  text-transform: capitalize;
+  color: #111111;
+  text-transform: capitalize;
+}
+/*////////////////////////// start news media query ///////////////////////////// /*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 995px) {
+  .news .row > div {
+    margin: 0 auto 10px;
+  }
+}
+@media (max-width: 768px) {
+  .news .row > div .report .details .down p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 575px) {
+  .news .row > div .report .details .down p {
+    font-size: 19px;
+  }
+}
+/*////////////////////////// end news media query ///////////////////////////// /*/
+
+/* //////////////////////// end news section ///////////////////////////*/
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/

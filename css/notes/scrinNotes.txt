@@ -1,0 +1,4 @@
+xlg :  1200px and up
+lg :  992px and up
+md :  768px and up
+sm :  600px and up

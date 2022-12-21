@@ -1,0 +1,153 @@
+/*----------------------- start landingPage -----------------------*/
+.landingPage {
+  height: 412px;
+  overflow: hidden;
+  position: relative;
+}
+.landingPage img {
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 51px;
+  font-variant: small-caps;
+  color: #000000;
+}
+/*----------------------- end  landingPage -----------------------*/
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/*----------------------- start  allOrders -----------------------*/
+.allOrders {
+  padding: 50px 0;
+  overflow: hidden;
+}
+.allOrders .orders .head {
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+.allOrders .orders .head ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+}
+.allOrders .orders > ul,
+.allOrders .orders > ul li {
+  width: 100%;
+  align-items: center;
+}
+.allOrders .orders .head ul li:nth-of-type(1),
+.allOrders .orders > ul > li > div:nth-of-type(1) {
+  width: 50%;
+}
+.allOrders .orders .head ul li:nth-of-type(2),
+.allOrders .orders .head ul li:nth-of-type(3),
+.allOrders .orders > ul > li > div:nth-of-type(2),
+.allOrders .orders > ul > li > div:nth-of-type(3) {
+  width: 25%;
+}
+
+.allOrders .orders > ul > li > div.main .image {
+  width: 130px;
+}
+.allOrders .orders > ul > li > div.main .image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.allOrders .orders > ul > li > div.main .details {
+  padding-left: 10px;
+}
+.allOrders .orders > ul > li > div.main .details h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+.allOrders .orders > ul > li > div.main .details span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #111111;
+}
+
+.allOrders .orders > ul > li > div.count button,
+.allOrders .orders > ul > li > div.count input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  background: #eee;
+  width: 40px;
+  color: #ff6e5a;
+  font-size: 12px;
+}
+.allOrders .orders > ul > li > div.count input {
+  text-align: center;
+  font-size: 15px;
+}
+/*----------------------- end  allOrders -----------------------*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/

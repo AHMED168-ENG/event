@@ -1,0 +1,499 @@
+/*----------------------- start landingPage -----------------------*/
+.landingPage {
+  height: 412px;
+  overflow: hidden;
+  position: relative;
+}
+.landingPage img {
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landingPage .over h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 51px;
+  font-variant: small-caps;
+  color: #000000;
+}
+/*----------------------- end  landingPage -----------------------*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+/*----------------------- start  searchProduct -----------------------*/
+.searchProduct {
+  padding: 70px 5%;
+}
+.searchProduct .search .input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.searchProduct .search .input input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+  outline: 0;
+}
+.searchProduct .search .input input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Montserrat";
+}
+.searchProduct .search .input i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  color: #ff6e5a;
+  transform: translateY(-50%);
+}
+.searchProduct .search form > div {
+  margin-bottom: 35px;
+}
+.searchProduct .search .price h4,
+.searchProduct .search .guest h4 {
+  margin-bottom: 0px;
+}
+.searchProduct .search .submitSearch button {
+  padding: 7px 25px;
+  width: 100%;
+  color: white;
+  background: #ff6e5a;
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat";
+  border-radius: 5px;
+}
+/* ///////////////////////// start input range ////////////////////////// */
+
+[slider] {
+  position: relative;
+  height: 3px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 25px 0 10px 0;
+}
+
+[slider] > div {
+  position: absolute;
+  left: 13px;
+  right: 15px;
+  height: 3px;
+}
+
+[slider] > div > [inverse-left] {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 0 7px;
+}
+
+[slider] > div > [inverse-right] {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 0 7px;
+}
+
+[slider] > div > [range] {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  border-radius: 14px;
+  background-color: #ff6e5a;
+}
+
+[slider] > div > [thumb] {
+  position: absolute;
+  top: -7px;
+  z-index: 2;
+  height: 15px;
+  width: 15px;
+  text-align: left;
+  margin-left: -11px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #ff6e5a;
+  border-radius: 50%;
+  outline: none;
+}
+
+[slider] > input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 3;
+  height: 3px;
+  top: -2px;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+div[slider] > input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+
+div[slider] > input[type="range"]:focus {
+  outline: none;
+}
+
+div[slider] > input[type="range"]::-ms-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+}
+
+div[slider] > input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+}
+
+div[slider] > input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 28px;
+  height: 28px;
+  border-radius: 0px;
+  border: 0 none;
+  background: red;
+  -webkit-appearance: none;
+}
+
+div[slider] > input[type="range"]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type="range"]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type="range"]::-ms-tooltip {
+  display: none;
+}
+
+[slider] > div > [sign] {
+  opacity: 0;
+  position: absolute;
+  margin-left: -11px;
+  top: -39px;
+  z-index: 3;
+  background-color: #ff6e5a;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+[slider] > div > [sign]:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  border-radius: 16px;
+  top: 19px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top-width: 16px;
+  border-top-style: solid;
+  border-top-color: #ff6e5a;
+}
+
+[slider] > div > [sign] > span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+[slider]:hover > div > [sign] {
+  opacity: 1;
+}
+/* ///////////////////////// end input range ////////////////////////// */
+
+.searchProduct .search div h4 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #111111;
+}
+.searchProduct .search div.location ul,
+.searchProduct .search div.hotelName ul,
+.searchProduct .search div.rates ul {
+  padding: 8px;
+  border: 1px solid #ff6e5a;
+}
+.searchProduct .search div ul li label {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  cursor: pointer;
+}
+.searchProduct .search div ul li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.searchProduct .search div ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.searchProduct .search div.rates .fas {
+  color: #ff6e5a;
+}
+.searchProduct .search div.rates .far {
+  color: #d8d8d8;
+}
+.searchProduct .search div.reviewe h2 {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ff6e5a;
+  margin-bottom: 40px;
+}
+.searchProduct .search div.reviewe ul li {
+  justify-content: start;
+}
+.searchProduct .search div.reviewe ul li img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.searchProduct .search div.reviewe ul li .name h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+}
+.searchProduct .search div.reviewe ul li .name span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #222222;
+}
+
+.searchProduct .products .product {
+  background: #f4f4f7;
+  margin-bottom: 10px;
+}
+
+.searchProduct .products .product:hover {
+  background: #f8f8fa;
+}
+
+.searchProduct .products > div:nth-of-type(even) .product {
+  background: #fdfdfd !important;
+}
+.searchProduct .products .product .image {
+  width: 100%;
+  height: 338px;
+}
+.searchProduct .products .product .image img {
+  width: 100%;
+  height: 100%;
+}
+.searchProduct .products .product .details {
+  padding: 20px;
+}
+.searchProduct .products .product .details h4 {
+  font-family: "Sulphur Point";
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #1e2022;
+}
+.searchProduct .products .product .details i.fas {
+  color: #ff6e5a;
+}
+.searchProduct .products .product .details .rait {
+  margin-bottom: 15px;
+}
+.searchProduct .products .product .details a {
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.searchProduct .products .product .details a span {
+  color: #ff6e5a;
+  font-family: Sulphur Point;
+  font-size: 14px;
+}
+.searchProduct .products .product .details a:hover i {
+  animation: showDetailsIcon 1.2s linear infinite;
+}
+.searchProduct .pagination {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.searchProduct .pagination ul {
+  justify-content: center;
+  width: 100%;
+}
+.searchProduct .pagination ul li {
+  margin: 0 20px;
+}
+.searchProduct .pagination ul li a {
+  color: #111111;
+  display: block;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #111111;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.searchProduct .pagination ul li i {
+  margin: 0 5px;
+}
+.searchProduct .pagination ul li:not(:nth-of-type(1), :last-of-type) a {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+}
+
+.searchProduct .pagination ul li:not(:nth-of-type(1), :last-of-type):hover a,
+.searchProduct .pagination ul li:not(:last-of-type).active a {
+  color: white !important;
+  background: #ff6e5a;
+}
+@keyframes showDetailsIcon {
+  0% {
+    transform: translate(50%);
+  }
+  50% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(50%);
+  }
+}
+
+/*----------------------- end  searchProduct -----------------------*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
+
+/*
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+*/
